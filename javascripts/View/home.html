@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-xs-6" ng-controller="listController as list">
+        <div class="page-header">Some list directive</div>
+
+        <example-list items="list.items"
+                      max-height="250px"
+                      item-color="lightgrey"
+                      text-color="black">
+        </example-list>
+    </div>
+
+    <div class="col-xs-6" ng-controller="otherController as other">
+        <div class="page-header">Add new item</div>
+        <form ng-submit="" class="input-group input-group-sm" novalidate>
+            <label for="new-item" class="input-group-addon">item: </label>
+            <input type="text" class="form-control" id="new-item" ng-model="other.item">
+            <a href="javascript:void(0);" class="input-group-addon btn-sm btn"
+               ng-click="other.addItem(other.item);">
+                Add
+            </a>
+        </form>
+    </div>
+</div>

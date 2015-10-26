@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html ng-app="example">
+
+<head>
+    <link rel="stylesheet" href="vendor/Bootstrap/css/bootstrap.min.css">
+
+    <script src="vendor/jQuery/jquery-2.1.3.js"></script>
+    <script src="vendor/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+
+    <!-- Залежності (Dependencies)-->
+    <script src="vendor/ui-router/angular-ui-router.min.js"></script>
+
+    <!-- Модуль (module)-->
+    <script src="javascripts/example.js"></script>
+
+    <!-- Конфіг (config)-->
+    <script src="javascripts/example.config.js"></script>
+
+    <!-- Фільтри, константи, глобальні значення (filter, constant, value) -->
+    <!--<script src="#"></script>-->
+
+    <!-- Сервіси (factory, service)-->
+    <script src="javascripts/Service/data.service.js"></script>
+
+    <!-- Контроллери (controller)-->
+    <script src="javascripts/Controller/list.controller.js"></script>
+    <script src="javascripts/Controller/other.controller.js"></script>
+
+    <!-- Директиви (directive)-->
+    <script src="javascripts/Directive/list.directive.js"></script>
+
+    <base href="/">
+</head>
+
+<body>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+</body>
+
+</html>
