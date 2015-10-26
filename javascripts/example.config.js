@@ -9,6 +9,10 @@
                 'url': '/home',
                 'templateUrl': '/javascripts/View/home.html'
             })
+            .state('next', {
+                'url': '/next',
+                'templateUrl': '/javascripts/View/next.html'
+            })
         ;
 
         $urlRouterProvider.otherwise('/home');
